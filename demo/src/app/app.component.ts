@@ -10,7 +10,7 @@ export class AppComponent {
 
   constructor(){
     this.name = 'updated info';
-    this.changeName('more');
+    this.changeName('lol');
   }
 
   changeName(name:string):void {

@@ -6,6 +6,7 @@ import { Todo } from 'src/app/models/Todo';
   templateUrl: './todo-item.component.html',
   styleUrls: ['./todo-item.component.scss']
 })
+
 export class TodoItemComponent implements OnInit {
   @Input() todo:Todo;
 
@@ -16,11 +17,10 @@ export class TodoItemComponent implements OnInit {
 
   // set dynamic class
   setClass(){
-    let classes = {
+    return {
       todo: true,
       "is-complete": this.todo.completed
     };
-    return classes;
   }
 
 }
